@@ -15,7 +15,7 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration config)
     {
         services.AddDbContext<AppDbContext>(opts =>
-            opts.UseSqlite(config.GetConnectionString("Default") ?? "Data Source=spizarnia.db"));
+            opts.UseNpgsql(config.GetConnectionString("Default")));
 
         services.AddScoped<IJwtService, JwtService>();
         services.AddScoped<IUserRepository, UserRepository>();
