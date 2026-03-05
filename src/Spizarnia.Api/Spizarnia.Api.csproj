@@ -21,6 +21,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>spizarnia-api-dev</UserSecretsId>
   </PropertyGroup>
 
 </Project>
